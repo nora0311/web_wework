@@ -3,7 +3,7 @@ from time import sleep
 
 from selenium.webdriver.common.by import By
 
-from test_wework_selenium.page.base.basepage import BasePage
+from test_wework.page.base.basepage import BasePage
 
 
 """
@@ -14,7 +14,7 @@ from test_wework_selenium.page.base.basepage import BasePage
 class AddMemberPage(BasePage):
 
     def add_member_page(self,name,acctid,phone):
-        from test_wework_selenium.page.contacts.contact import Contact
+        from test_wework.page.contacts.contact import Contact
         name_locator = (By.ID, 'username')
         acctid_locator = (By.ID, 'memberAdd_acctid')
         gender_locator = (By.CSS_SELECTOR, '.ww_radio[value="2"]')
