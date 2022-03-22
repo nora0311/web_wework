@@ -13,7 +13,7 @@ class ManageTools(BasePage):
     _base_url = "https://work.weixin.qq.com/wework_admin/frame#manageTools"
 
     # 素材库
-    def material(self):
+    def goto_material(self):
         # 点击素材库
         material_locator = (
             By.CSS_SELECTOR, '[id="js_manageTools_index"] li:nth-child(5) .manageTools_cnt_item_desc_title')

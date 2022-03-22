@@ -10,16 +10,14 @@ from test_wework.page.login.index import Index
 
 class TestIndex:
     def setup(self):
-        # self._driver = webdriver.Chrome()
-        # self._driver.get("https://work.weixin.qq.com/")
-        # self._driver.implicitly_wait(5)
+
         self.index = Index()
 
     def test_register(self):
         # main-立即注册
-        self.index.goto_register().registry("霍格沃茨")
+        self.index.goto_register().registry("pangpang")
 
     def test_login(self):
-        register_page = self.index.goto_login().goto_register().registry("ceceshi")
+        register_page = self.index.goto_login().goto_register().registry("pangpang")
 
         assert "请选择" in "|".join(register_page.get_error_message())

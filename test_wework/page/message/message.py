@@ -42,7 +42,6 @@ class Message(BasePage):
         self.find(By.LINK_TEXT, "确定").click()
 
         # content = self.find(By.ID, "js_tips").text
-
         return HistoryMsg(reuse=True)
 
     def wait_element(self, x):
@@ -51,6 +50,3 @@ class Message(BasePage):
         if size < 1:
             self._driver.find_element(By.LINK_TEXT, "选择需要发消息的应用").click()
         return size >= 1
-
-    def message_history(self):
-        pass

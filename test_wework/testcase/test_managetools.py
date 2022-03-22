@@ -11,8 +11,8 @@ class TestManageTools:
 
     # 上传素材
     def test_pic_material(self):
-        self.manage.material().pic_material(
-            "/Users/serenehoo/PycharmProjects/Selenium_pro/test_contact_selenium/testcase/rose.jpg")
+        self.manage.goto_material().pic_material(
+            "/Users/serenehoo/Desktop/PythonProj/web_wework/test_wework/testcase/rose.jpg")
 
     # 消息群发
     def test_send_message(self):

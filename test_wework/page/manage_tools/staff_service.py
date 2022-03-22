@@ -13,6 +13,5 @@ class StaffService(BasePage):
 
     def add_service_account(self):
         self.find(By.LINK_TEXT, '添加服务帐号').click()
-        sleep(3)
         # 员工帐号添加界面
         pass

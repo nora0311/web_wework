@@ -1,3 +1,5 @@
+import pytest
+
 from test_wework.page.contacts.contact import Contact
 from test_wework.utils.data_name import DataName
 

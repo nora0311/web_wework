@@ -17,7 +17,6 @@ class Registry(BasePage):
         self._driver.find_element(By.ID, 'submit_btn').click()
         return self
 
-    # registry 返回的是当前页面。 获取页面信息也是在registry 页面
     def get_error_message(self):
         result = []
         for element in self._driver.find_elements(By.CSS_SELECTOR, '.js_error_msg'):
