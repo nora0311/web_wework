@@ -5,7 +5,7 @@ from time import sleep
 
 from selenium.webdriver.common.by import By
 
-from test_wework_selenium.page.base.basepage import BasePage
+from test_wework.page.base.basepage import BasePage
 
 
 class StaffService(BasePage):

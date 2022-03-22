@@ -5,7 +5,7 @@ url https://work.weixin.qq.com/
 注册失败
 
 """
-from test_wework_selenium.page.login.index import Index
+from test_wework.page.login.index import Index
 
 
 class TestIndex:

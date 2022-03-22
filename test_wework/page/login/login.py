@@ -1,7 +1,7 @@
 from selenium.webdriver.common.by import By
 
-from test_wework_selenium.page.base.basepage import BasePage
-from test_wework_selenium.page.login.registry import Registry
+from test_wework.page.base.basepage import BasePage
+from test_wework.page.login.registry import Registry
 
 
 class Login(BasePage):
@@ -19,7 +19,3 @@ class Login(BasePage):
     def login_fail(self):
         pass
 
-    def scan_qrcode(self):
-        # 使用远程 remote ，debug 模式
-
-        pass

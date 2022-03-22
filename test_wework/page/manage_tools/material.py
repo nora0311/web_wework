@@ -3,12 +3,11 @@
 
 """
 from time import sleep
-
 from selenium.webdriver.common.by import By
 from selenium.webdriver.remote.webelement import WebElement
 from selenium.webdriver.support.wait import WebDriverWait
 
-from test_wework_selenium.page.base.basepage import BasePage
+from test_wework.page.base.basepage import BasePage
 
 
 class Material(BasePage):

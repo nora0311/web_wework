@@ -5,8 +5,8 @@
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
 
-from test_wework_selenium.page.base.basepage import BasePage
-from test_wework_selenium.page.contacts.add_member import AddMemberPage
+from test_wework.page.base.basepage import BasePage
+from test_wework.page.contacts.add_member import AddMemberPage
 
 
 class Contact(BasePage):

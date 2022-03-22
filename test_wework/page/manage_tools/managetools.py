@@ -2,10 +2,11 @@
 主页-管理工具
 """
 from selenium.webdriver.common.by import By
-from test_wework_selenium.page.base.basepage import BasePage
-from test_wework_selenium.page.manage_tools.material import Material
-from test_wework_selenium.page.message.message import Message
-from test_wework_selenium.page.manage_tools.staff_service import StaffService
+
+from test_wework.page.base.basepage import BasePage
+from test_wework.page.manage_tools.material import Material
+from test_wework.page.manage_tools.staff_service import StaffService
+from test_wework.page.message.message import Message
 
 
 class ManageTools(BasePage):

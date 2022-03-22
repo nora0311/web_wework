@@ -1,4 +1,4 @@
-from test_wework_selenium.page.base.main import Main
+from test_wework.page.base.main import Main
 
 
 class TestMain:

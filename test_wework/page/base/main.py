@@ -5,14 +5,12 @@ from time import sleep
 
 from selenium.webdriver.common.by import By
 
-from test_wework_selenium.page.base.basepage import BasePage
-from test_wework_selenium.page.contacts.add_member import AddMemberPage
-
-from test_wework_selenium.page.contacts.import_contact import ImportContact
-
-from test_wework_selenium.page.customer.customer import Customer
-from test_wework_selenium.page.manage_tools.managetools import ManageTools
-from test_wework_selenium.page.message.message import Message
+from test_wework.page.base.basepage import BasePage
+from test_wework.page.contacts.add_member import AddMemberPage
+from test_wework.page.contacts.import_contact import ImportContact
+from test_wework.page.customer.customer import Customer
+from test_wework.page.manage_tools.managetools import ManageTools
+from test_wework.page.message.message import Message
 
 
 class Main(BasePage):

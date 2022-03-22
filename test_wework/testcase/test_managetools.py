@@ -1,7 +1,7 @@
 """
 管理工具简单测试
 """
-from test_wework_selenium.page.manage_tools.managetools import ManageTools
+from test_wework.page.manage_tools.managetools import ManageTools
 
 
 class TestManageTools:

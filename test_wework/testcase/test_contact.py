@@ -1,5 +1,5 @@
-from test_wework_selenium.page.contacts.contact import Contact
-from test_wework_selenium.utils.data_name import DataName
+from test_wework.page.contacts.contact import Contact
+from test_wework.page.utils.data_name import DataName
 
 
 class TestContact:

@@ -1,4 +1,4 @@
-from test_wework_selenium.page.message.history_msg import HistoryMsg
+from test_wework.page.message.history_msg import HistoryMsg
 
 
 class TestMsg:

@@ -5,8 +5,8 @@
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
 
-from test_wework_selenium.page.message.history_msg import HistoryMsg
-from test_wework_selenium.page.base.basepage import BasePage
+from test_wework.page.base.basepage import BasePage
+from test_wework.page.message.history_msg import HistoryMsg
 
 
 class Message(BasePage):
@@ -31,7 +31,7 @@ class Message(BasePage):
         element = self._driver.find_elements(By.CSS_SELECTOR, '.ww_searchInput_text')[-1]
         element.send_keys(group)
 
-        self.find(By.CSS_SELECTOR,'[id="searchResult"] li:nth-child(1)').click()
+        self.find(By.CSS_SELECTOR, '[id="searchResult"] li:nth-child(1)').click()
 
         self.find(By.LINK_TEXT, "确认").click()
         # 编辑区域
@@ -51,7 +51,6 @@ class Message(BasePage):
         if size < 1:
             self._driver.find_element(By.LINK_TEXT, "选择需要发消息的应用").click()
         return size >= 1
-
 
     def message_history(self):
         pass
