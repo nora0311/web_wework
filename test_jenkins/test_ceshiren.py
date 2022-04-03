@@ -9,7 +9,7 @@ from selenium.webdriver.common.by import By
 
 class TestCeshiren:
 
-    def setup(self):
+    def setup_class(self):
         self.driver=webdriver.Chrome()
         self.driver.get("https://ceshiren.com")
         self.driver.implicitly_wait(30)
