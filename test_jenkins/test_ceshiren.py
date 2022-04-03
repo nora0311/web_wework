@@ -18,3 +18,6 @@ class TestCeshiren:
         self.driver.find_element(By.ID,'search-button').click()
         self.driver.find_element(By.ID,'search-term').send_keys("测试"+Keys.ENTER)
         self.driver.find_element(By.CSS_SELECTOR,'[title="打开高级搜索"]').click()
+
+    def teardown_class(self):
+        self.driver.quit()
